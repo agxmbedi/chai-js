@@ -16,3 +16,4 @@ console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
 prefer not to use var
 always use let becuase of block scope issue and functional scope
 */
+// always use the let over var.
