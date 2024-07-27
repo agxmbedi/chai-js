@@ -2,5 +2,6 @@
 //datatypes-> (bifInt,string,boolean,null)
 //symbol => unique
 //object
-// console.log(typeof age);
-// null -> it is a standlone datatype.
+console.log(typeof age); - > //undefined
+console.log(typeof null); //object
+// null -> it is a standlone datatype
