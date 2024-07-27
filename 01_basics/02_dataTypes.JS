@@ -3,3 +3,4 @@
 //symbol => unique
 //object
 // console.log(typeof age);
+// null -> it is a standlone datatype.
