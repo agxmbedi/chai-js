@@ -35,3 +35,6 @@ console.log(myFunction)
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//stack (primitive)=> mtlb ki ek copy milti hai na ki original data 
+// Heap (non-primitive) => refenrece milta hai (original change hoga sede na ki koi copy)
