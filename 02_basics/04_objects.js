@@ -32,3 +32,11 @@ const course={
 const{teacher : chu}=course // de structuring -> naam bhi change kar skte hai hum
 
 console.log(chu);
+
+
+//json
+{
+    "name":"agambediAPI",
+    "age" : "22"
+}
+//json formatter
