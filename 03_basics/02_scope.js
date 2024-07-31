@@ -34,13 +34,13 @@ function one(){
 
 }
 
-// one()
+one()
 
 if (true) {
     const username = "hitesh"
     if (username === "hitesh") {
         const website = " youtube"
-        // console.log(username + website);
+        console.log(username + website);
     }
     // console.log(website);
 }
@@ -51,7 +51,7 @@ if (true) {
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
-//console.log(addone(5))
+console.log(addone(5))
 
 function addone(num){
     return num + 1
@@ -60,6 +60,7 @@ function addone(num){
 
 
 //addTwo(5)
+//esko expression bolte hai JS meh 
 const addTwo = function(num){
     return num + 2
 }
