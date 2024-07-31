@@ -1,0 +1,30 @@
+JAVASCRIPT EXECUTION CONTEXT ( js code ko run kaise karegi)
+
+1. Global EC ( hoga hi hoga)
+-> 'this' is andar hota hia global executiuon CONTEXT
+-> single threaded hai 
+
+
+2. Function EC
+3. Eval EC(bas pata hona chahiye)
+
+Phase A-> Memory Creation phase
+Phase B -> Execution phase
+
+eg.
+phase A{
+    val=> undefined
+    (Function)=>defination
+    (more varibles)
+}
+
+phase B{
+    val=>10(what ever the code giving)
+    (Function)=> {
+        new varible enviroment + execution thread {
+            again memory phase chalega
+             and kaam hone ke bad delete bhi ho jata hai.
+        }
+    }
+
+}
