@@ -1,19 +1,26 @@
 //var c = 300
 let a = 300
+const b =101
 if (true) {
-    let a = 10
-    const b = 20
-    // console.log("INNER: ", a);
+     a = 10
+     const b = 20
+     console.log("INNER: ", a);
+     console.log("INNER: ", b);
+
     
 }
+console.log(a)
+console.log(b)
 
-
+// var esse liye ue nahi krna chiye kyuki voh ek Global variable ban jata hia jinka scope thoygh code chala jata hia, always use let and const 
+// {}...enke ander
 
 // console.log(a);
 // console.log(b);
 // console.log(c);
 
 
+// NESTED SCOPE
 function one(){
     const username = "hitesh"
 
@@ -44,7 +51,7 @@ if (true) {
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
-console.log(addone(5))
+//console.log(addone(5))
 
 function addone(num){
     return num + 1
