@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code and suicide </title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>Js</li>
+
+    </ul>
+    
+</body>
+<script>
+    function addlang(langName){
+        const li=document.createElement('li');
+        li.innerHTML=`${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addlang("Spanish");
+    addlang("Python");
+//optimised way for the aobove approch is below cause  ess way se tree treverse ho raha hai baar baar , har time when we add new lang to this fucntion
+
+    function  addLang(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li)
+        }
+        // appendchild use karo , yeh method optimised hai bhai. innerHTML slow hai
+        addLang("java")
+
+        // how we can edit this list , lets see
+        const secondLang=document .querySelector("li : nth-child(2)")
+        secondLang.innerHTML="mojo" // not optimised tho
+        const newli=document.createElement('li');
+        newli.textContent ="mojo"
+        secondLang.replaceWith(newli);
+        
+
+</script>
+</html>
