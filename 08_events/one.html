@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick=function(){
+    //     alert('owl');
+    // }
+    // yeh est approach nahi hai for the alert feature.
+    // use event Listerner for these kind of events
+    // 3rd paramter hit hota hai aur usko false likhna hota hai jo ki by deafult hota hu
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     //alert("owl click kar diya hai")
+    //     console.log("clicked inside the url");
+    // },false)
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     //alert("owl click kar diya hai")
+    //     console.log("owl clicked");
+    //     e.stopPropagation();
+    // },false)
+
+    // // this is called event bubbling -> niche se upar just like the bubble by using false.
+
+
+    // // document.getElementById('images').addEventListener('click',function(e){
+    // //     //alert("owl click kar diya hai")
+    // //     console.log("clicked inside the url");
+    // // },true)
+    // // document.getElementById('owl').addEventListener('click',function(e){
+    // //     //alert("owl click kar diya hai")
+    // //     console.log("owl clicked");
+    // // },true)
+    // // this is called capturing mode, first upar wlaa alert run hoga then niceh wala.
+
+
+    // // type,timestamp , defualtPrevented
+    // // target . to Element , srcElement, currentTarget
+    // // clientX , client Y , screenX and ScreenY
+    // //altKey, ctrlKey, shiftKey, keyCode
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopImmediatePropagation()
+    //     console.log("goggle clicked");
+    //     },false)
+
+    document.querySelector('#images').
+
+</script>
+</html>
