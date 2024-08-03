@@ -61,7 +61,17 @@
     //     console.log("goggle clicked");
     //     },false)
 
-    document.querySelector('#images').
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+        if(e.target.tagName==='IMG'){
+            console.log(e.target.id);
+        let remove=e.target.parentNode;
+        remove.remove();
+        }
+        
+    })
+   // remove.parentNode.removeChild(remove);
+   // another method.
 
 </script>
 </html>
