@@ -5,7 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body style="background-color: #414141; color: aliceblue;">
+     <h1>Agam is here</h1>
+     <button id="stop"> Stop</button>
 </body>
+<script>
+    //method hai aur api ko call kra hai.
+    const print=function(){
+        console.log("cool stuff");
+        
+    }
+    const text=function(){
+        document.querySelector('h1').innerHTML="fuck this"
+
+    }
+    const timer=setTimeout(text,5000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(timer);
+        console.log("Stoppped");
+        
+    })
+    
+
+</script>
 </html>
