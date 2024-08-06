@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai and Daaru</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+     <h1>Agam is here</h1>
+     <button id="stop"> Stop</button>
+     <button id="start"> Start</button>
+
+</body>
+<script>
+    // setInterval(function(str){
+    //     console.log(str,Date.now());
+    // },2000,"hello syna")
+
+    const print=function(str){
+        console.log(str,Date.now());
+    }
+   const intervalId= setInterval(print,4000,"hello miss syna");
+    //clearInterval(intervalId);
+
+
+
+    document.querySelector('#start').addEventListener('click',function(){
+        intervalId;
+        console.log("started");
+    })
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(intervalId);
+        console.log("stopped");
+    })
+   
+    
+
+</script>
+</html>
