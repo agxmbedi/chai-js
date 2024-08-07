@@ -71,3 +71,17 @@ setInterval(function () {
 }, 1000);
 
 ```
+
+## Project 5
+
+``` javascript
+const insert=document.getElementById('insert')
+
+window.addEventListener('keydown',(e)=>{
+  insert.innerHTML=`
+  <div class='color'>
+    <h1>${e.key}</h1>
+  </div>`
+})
+
+```
