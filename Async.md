@@ -11,3 +11,6 @@
  such as read file system(node js meh access milta hai)
 
  -> Non blocking code --- Does not block execution  --(read file Async)
+
+# Async flow
+![](../chai-js/Screenshot%202024-08-08%20at%206.38.45 PM.png)
